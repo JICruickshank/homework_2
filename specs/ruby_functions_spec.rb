@@ -6,32 +6,38 @@ class Functions_Practice < MiniTest::Test
   def test_return_10()
     return_10_result = return_10()
     assert_equal( 10, return_10_result )
-  end
 
+  end
+  #
   def test_add()
     add_result = add( 1, 2 )
     assert_equal( 3, add_result )
-  end
 
+  end
+  #
   def test_subtract()
     subtract_result = subtract( 10, 5 )
     assert_equal( 5, subtract_result )
+
   end
 
   def test_multiply()
     multiply_result = multiply( 4, 2 )
     assert_equal( 8, multiply_result )
+
   end
 
   def test_divide()
     divide_result = divide( 10, 2 )
     assert_equal( 5, divide_result )
+
   end
 
   def test_length_of_string()
     test_string = "A string of length 21"
     length_of_string = length_of_string( test_string )
     assert_equal( 21, length_of_string )
+
   end
 
   def test_join_string()
@@ -39,11 +45,13 @@ class Functions_Practice < MiniTest::Test
     string_2 = "it's fleece was white as snow"
     joined_string = join_string( string_1, string_2 )
     assert_equal( "Mary had a little lamb, it's fleece was white as snow", joined_string )
+
   end
 
   def test_add_string_as_number()
     add_result = add_string_as_number( "1", "2" )
     assert_equal( 3, add_result )
+
   end
 
   def test_number_to_full_name()
@@ -57,6 +65,7 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "March", third_month_string )
     assert_equal( "September", ninth_month_string )
     assert_equal("Error", error)
+
   end
 
 
@@ -68,6 +77,7 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Jan", first_month_string )
     assert_equal( "Mar", third_month_string )
     assert_equal( "Sep", ninth_month_string )
+
   end
   #
   #
@@ -88,16 +98,17 @@ class Functions_Practice < MiniTest::Test
   def test_volume_of_sphere()
 
     result = volume_of_sphere(5)
-    assert_equal(4 * (Math::PI) * (5 ** 3) / 3,result)
+    assert_equal(523.5987755982989,result)
     #add test code here
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-      
-
     #add test code here
-
+    result_32 = fahrenheit_to_celsius(32)
+    result_50 = fahrenheit_to_celsius(50)
+    assert_equal(0, result_32)
+    assert_equal(10.0008, result_50)
 
   end
 

@@ -73,3 +73,7 @@ end
 def volume_of_sphere(a)
   4 * (Math::PI) * (a ** 3) / 3
 end
+
+def fahrenheit_to_celsius(farenheit)
+  return (farenheit - 32) * 0.5556
+end
